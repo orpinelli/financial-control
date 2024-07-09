@@ -1,0 +1,19 @@
+import type { NextRequest } from "next/server";
+import data from "../data.json";
+import { z } from "zod";
+export async function GET(
+  request: NextRequest,
+) {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
+  const {searchParams } = request.nextUrl
+
+
+  const query = z.string().parse(searchParams.get('q'));
+
+  const transaction = data.transaction.filter(transaction => {
+    return transaction.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())
+  })
+
+  return Response.json(transaction);
+}

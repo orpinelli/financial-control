@@ -1,0 +1,44 @@
+{
+  "transaction": [
+    {
+      "id": 1,
+      "title": "Paciente - Everaldo",
+      "slug": "entrada",
+      "price": 160,
+      "type": "entrada",
+      "image": "/foto1.png",
+      "description": "pagamento da sessão",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Paciente - Stael",
+      "slug": "entrada",
+      "price": 160,
+      "type": "entrada",
+      "image": "/foto2.png",
+      "description": "pagamento da sessão",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Paciente - Alemao",
+      "slug": "entrada3",
+      "price": 75,
+      "type": "entrada",
+      "image": "/foto3.png",
+      "description": "pagamento da sessão",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "gasto - 1x Creme",
+      "slug": "saida",
+      "price": -54,
+      "type": "saida",
+      "image": "/foto4.png",
+      "description": "gasto com creme",
+      "featured": true
+    }
+  ]
+}
